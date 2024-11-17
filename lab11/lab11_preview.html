@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11</title>
+    <script>
+        function winnerMessage() {
+            document.getElementById("messages").innerHTML = "You Won!";
+        }
+
+        function tryAgain() {
+            document.getElementById("messages").innerHTML = "Wrong Shell - Try Again";
+        }
+        
+    </script>
+    <link rel="stylesheet" href="animate2.css">
+</head>
+<body>
+    <h1>Choose a Walnut</h1>
+    <div class = "container">
+        <img src="../images/walnut.png" id="first" alt="first walnut" onclick="winnerMessage();" >
+        <img src="../images/walnut.png" id="second" alt="second walnut" onclick="tryAgain();" >
+        <img src="../images/walnut.png" id="third" alt="third walnut" onclick="tryAgain();" >
+    </div>
+
+    <div>
+        <h1 id="messages">message here</h1>
+    </div>
+
+</body>
+</html>
